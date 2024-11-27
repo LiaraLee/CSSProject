@@ -5,28 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Danfo:wght@100..100&family=Doto:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <title>CSS Project</title>
 </head>
 <body>
   <div class="container">
-    <header>
-        <input type="text" placeholder="Search emails">
-        <img src="assets/R.jpg" alt="Vault Tech Logo">
-    </header>
+  
     <section class="welcome">
-        <p><strong>Welcome, User!</strong></p>
-        <button class="compose">Compose</button>
-        <ul>
-            <li><a href=""></a>Inbox (3)</li>
-            <li><a href=""></a>Tagged</li>
-            <li><a href=""></a>Important</li>
-            <li><a href=""></a>Sent Mail</li>
-            <li><a href=""></a>Drafts</li>
-            <li><a href=""></a>Spam</li>
-            <li><a href=""></a>Trash</li>
-        </ul>
+        <p><strong>*)*Welcome*(* Sole Survivor!</strong></p>
+        <img src="assets/R.jpg" alt="Vault Tech Logo">
     </section>
+
+    <section class="search-emails">
+        <header>
+            <input type="text" placeholder="Search emails">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="https://store.steampowered.com/app/377160/Fallout_4/">Inbox (3)</a></li>
+                <li><a href="https://store.steampowered.com/app/377160/Fallout_4/">Tagged</a></li>
+                <li><a href="https://store.steampowered.com/app/377160/Fallout_4/">Important</a></li>
+                <li><a href="https://store.steampowered.com/app/377160/Fallout_4/">Sent Mail</a></li>
+                <li><a href="https://store.steampowered.com/app/377160/Fallout_4/">Drafts</a></li>
+                <li><a href="https://store.steampowered.com/app/377160/Fallout_4/">Spam</a></li>
+                <li><a href="https://store.steampowered.com/app/377160/Fallout_4/">Trash</a></li>
+            </ul> 
+        </nav>
+        <button class="compose">Compose</button>   
+    </section>
+    
     <main>
         <section class="email-list">
             <ol>
@@ -40,14 +48,16 @@
             <p>From: Preston Garvey</p>
             <p>To: Sole Survivor</p>
             <p>Date: 10/30/2024</p>
-            <p>Message: </p>
+            <p>Message: "Another settlement needs your help, I'll mark on your map." </p>
         </section>
         <section class="reply-section">
-            <textarea placeholder="Write your reply..."></textarea>
-            <button class="send">Send</button>
+            <form action="submit_reply.php" method="POST">
+                <textarea name="reply" placeholder="Write your reply..."></textarea>
+                <button type="submit" class="send">Send</button>
+            </form>
         </section>
-
     </main>
-</div>
+
+  </div>
 </body>
 </html>
