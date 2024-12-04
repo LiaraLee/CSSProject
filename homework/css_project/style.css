@@ -1,4 +1,3 @@
-/* browser adjustments */
 * {
     margin: 0;
     padding: 0;
@@ -106,13 +105,22 @@ main {
     margin: 5px 0;
     padding: 10px;
     border: 4px solid rgb(150, 248, 4);
+    color: rgb(150, 248, 4);
+  text-shadow: 
+    1px 1px 0 black,
+   -1px 1px 0 black,
+    1px -1px 0 black,
+   -1px -1px 0 black;
 }
 
+.email-list {
+   text-decoration-line: underline;
+}
 .reply-section {
     background-color: rgb(50, 50, 50);
 }
 
-@media (max-width: 768px) /*combined media query for read ability*/ {
+@media (max-width: 768px) {
     .container {
         flex-direction: column;
         height: auto;
