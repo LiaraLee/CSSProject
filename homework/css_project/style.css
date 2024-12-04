@@ -78,7 +78,7 @@ nav a:hover {
 }
 
 .compose:hover {
-    background-color: #b2ff59;
+    background-color: darkgreen;
 }
 
 .reply-section button.send {
